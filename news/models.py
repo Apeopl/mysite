@@ -21,3 +21,8 @@ class Article(models.Model):
 
     def __str__(self):
         return self.headline
+
+
+class People(models.Model):
+    name = models.CharField()
+    age = models.IntegerField()
